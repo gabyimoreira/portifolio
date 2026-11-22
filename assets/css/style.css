@@ -1,0 +1,26 @@
+/* Faz o menu rolar suavemente até a seção ("navegação fluida") */
+html { scroll-behavior: smooth; }
+/* Impede que o menu fixo tampe o título da seção */
+section { scroll-margin-top: 70px; }
+
+/* ===== CELULAR (é a base, vem primeiro) ===== */
+.hero {
+  display: flex;            /* Flexbox: a atividade pede isso */
+  flex-direction: column;   /* um embaixo do outro */
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+.foto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;        /* a foto não fica esticada */
+}
+
+/* ===== TABLET E COMPUTADOR (768px ou mais) ===== */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;    /* agora lado a lado */
+    text-align: left;
+  }
+}

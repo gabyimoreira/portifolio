@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Esta linha faz o site funcionar no celular. NÃO APAGUE -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfólio | Isabelly Bezerra</title>
+<!-- Roupa pronta do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Sua roupa (vem depois para poder mudar o Bootstrap) -->
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+ 
+  <!-- ===== MENU ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">Isabelly Bezerra</a>
+<!-- Botão "hambúrguer" que aparece no celular -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+ 
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Conhecimento</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="conhecimento.html#humanas">Ciências Humanas</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#natureza">Ciências da Natureza</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#matematica">Matemática</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#linguagens">Linguagens</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#areatecnica">Informatica</a></li>
+</ul>
+</li>
+ 
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tendências</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="percursotecnico.html#hardwareesoftware">Hardware e Software</a></li>
+<li><a class="dropdown-item" href="percursotecnico.html#redes">Redes</a></li>
+<li><a class="dropdown-item" href="percursotecnico.html#programação">Programação</a></li>
+</ul>
+</li>
+ 
+          <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+<!-- ATENÇÃO: NÃO coloque link para o admin aqui. Ele é secreto! -->
+</ul>
+</div>
+</div>
+</nav>
+ 
+  <!-- ===== CONTEÚDO (é a única parte que muda em cada página) ===== -->
+<main class="container py-5">
+   <main class="container py-5">
+  <h1>Contato</h1>
+
+  <form id="form-contato" class="row g-3" novalidate>
+    <div class="col-12 col-md-6">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" id="nome" class="form-control" required>
+      <div class="invalid-feedback">Isabelly Bezerra da Silva</div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" id="email" class="form-control" required>
+      <div class="invalid-feedback">bsilvaisabelly0@gmail.com</div>
+    </div>
+
+    <div class="col-12">
+      <label for="assunto" class="form-label">Assunto</label>
+      <input type="text" id="assunto" class="form-control" required>
+      <div class="invalid-feedback">Sugestão: Problemas com o site</div>
+    </div>
+
+    <div class="col-12">
+      <label for="mensagem" class="form-label">Mensagem</label>
+      <textarea id="mensagem" class="form-control" rows="5" required></textarea>
+      <div class="invalid-feedback">Digite sua mensagem.</div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+
+  <div id="alerta" class="mt-3"></div>
+</main>
+ 
+  </main>
+ 
+  <!-- ===== RODAPÉ ===== -->
+<footer class="bg-dark text-white text-center py-3">
+<span id="acesso-admin">©</span> 2026 Isabelly Bezerra
+ 
+</footer>
+ <!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Armazenamento das mensagens -->
+<script src="assets/js/storage.js"></script>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Formulário de contato -->
+<script src="assets/js/contato.js"></script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Esta linha faz o site funcionar no celular. NÃO APAGUE -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Portfólio | Isabelly Bezerra</title>
+<!-- Roupa pronta do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Sua roupa (vem depois para poder mudar o Bootstrap) -->
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+ 
+  <!-- ===== MENU ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">Isabelly Bezerra</a>
+<!-- Botão "hambúrguer" que aparece no celular -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+ 
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Conhecimento</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="conhecimento.html#humanas">Ciências Humanas</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#natureza">Ciências da Natureza</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#matematica">Matemática</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#linguagens">Linguagens</a></li>
+<li><a class="dropdown-item" href="conhecimento.html#areatecnica">Informatica</a></li>
+</ul>
+</li>
+ 
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tendências</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="percursotecnico.html#hardwareesoftware">Hardware e Software</a></li>
+<li><a class="dropdown-item" href="percursotecnico.html#redes">Redes</a></li>
+<li><a class="dropdown-item" href="percursotecnico.html#programação">Programação</a></li>
+</ul>
+</li>
+ 
+          <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+<!-- ATENÇÃO: NÃO coloque link para o admin aqui. Ele é secreto! -->
+</ul>
+</div>
+</div>
+</nav>
+ 
+  <!-- ===== CONTEÚDO (é a única parte que muda em cada página) ===== -->
+<main class="container py-5">
+  <main class="container py-5">
+<h1 class="mb-4">Painel Administrativo</h1>
+<!-- Tela de acesso -->
+<div id="login-admin" class="card p-4 mx-auto" style="max-width: 400px;">
+<h4>Acesso restrito</h4>
+<p>Digite o PIN para entrar.</p>
+<input type="password" id="pin-admin" class="form-control mb-3" placeholder="Digite o PIN">
+<button id="btn-entrar" class="btn btn-primary">Entrar</button>
+<p id="erro-pin" class="text-danger mt-2"></p>
+</div>
+<!-- Painel de mensagens -->
+<div id="painel-admin" style="display: none;">
+<div class="d-flex justify-content-between align-items-center mb-3">
+<h3>Mensagens recebidas</h3>
+<button class="btn btn-success" id="btn-nova">+ Nova mensagem</button>
+</div>
+<div class="table-responsive">
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Nome</th>
+<th>E-mail</th>
+<th>Assunto</th>
+<th>Mensagem</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="lista-mensagens"></tbody>
+</table>
+</div>
+</div>
+</main>
+<!-- Janela para criar e editar mensagens -->
+<div class="modal fade" id="modalMensagem" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="titulo-modal">Nova mensagem</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<input type="hidden" id="mensagem-id">
+<label class="form-label">Nome</label>
+<input type="text" id="campo-nome" class="form-control mb-2">
+<label class="form-label">E-mail</label>
+<input type="email" id="campo-email" class="form-control mb-2">
+<label class="form-label">Assunto</label>
+<input type="text" id="campo-assunto" class="form-control mb-2">
+<label class="form-label">Mensagem</label>
+<textarea id="campo-mensagem" class="form-control"></textarea>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+<button type="button" class="btn btn-primary" id="btn-salvar">Salvar</button>
+</div>
+</div>
+</div>
+</div>
+tem menu de contexto
+ 
+  </main>
+ 
+  <!-- ===== RODAPÉ ===== -->
+<footer class="bg-dark text-white text-center py-3">
+<span id="acesso-admin"></span> 2026 Isabelly Bezerra
+</footer>
+ 
+  <!-- Cérebro do Bootstrap (faz o menu abrir no celular) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Seu cérebro: a gaveta de mensagens -->
+<script src="assets/js/storage.js"></script>
+<!-- Painel administrativo -->
+<script src="assets/js/admin.js"></script>
+ 
+</body>
+</html>
