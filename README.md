@@ -1,9 +1,9 @@
-# Portfólio Web Dinâmico – SEU NOME
+# Portfólio Web Dinâmico – Isabelly Bezerra
 Atividade final do 4º bimestre – Processo seletivo Canes Solution (Desenvolvedor Frontend)
 
 ## Links
-- Site no ar: https://SEU-USUARIO.github.io/portfolio
-- Repositório: https://github.com/SEU-USUARIO/portfolio
+- Site no ar: https://isabellybzs.github.io/portfolio
+- Repositório: https://github.com/isabellybzs/portfolio
 
 ## Tecnologias usadas
 HTML5, CSS3, JavaScript puro, Bootstrap 5.3, LocalStorage e EmailJS.
