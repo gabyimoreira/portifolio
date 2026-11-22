@@ -1,4 +1,4 @@
-# Portfólio Web Dinâmico – Isabelly Bezerra
+# Portfólio Web Dinâmico – Gabrielly Moreira
 Atividade final do 4º bimestre – Processo seletivo Canes Solution (Desenvolvedor Frontend)
 
 ## Links

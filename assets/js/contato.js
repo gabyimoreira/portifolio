@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   emailjs.init({
 
-    publicKey: "XuSRvB9DR0i5QIDkr"
+    publicKey: "-F3TqErjV6n8dWtej"
 
   });
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-    emailjs.send("service_apok6vn", "template_fs3tsxc", {
+    emailjs.send("service_1rhyzhk", "template_5nhv3op", {
 
       name: dados.nome,
 
